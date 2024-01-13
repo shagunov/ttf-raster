@@ -23,3 +23,9 @@ target_link_libraries(
   gtest_main
   gmock_main
 )
+
+#Добавим их в списки тестов
+add_test(
+	NAME ${PROJECT_NAME}
+	COMMAND ${PROJECT_NAME}
+)

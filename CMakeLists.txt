@@ -17,3 +17,6 @@ add_subdirectory(googletest)
 
 #Добавляем в наш проект файлы для тестирования
 add_subdirectory(test)
+
+#Добавляем в наш проект проект документации
+add_subdirectory(docs)
