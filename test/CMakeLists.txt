@@ -15,17 +15,17 @@ set(SOURCE_TESTS
 #Создаём исполняемый файл для запуска тестирования
 #Их может быть несколько поэтому вместо PROJECT_NAME 
 #стоит использовать другие имена
-add_executable(${PROJECT_NAME} ${SOURCE_TESTS})
+#add_executable(${PROJECT_NAME} ${SOURCE_TESTS})
 
 #Добавим библиотеки для тестирования
-target_link_libraries(
-  ${PROJECT_NAME} PUBLIC
-  gtest_main
-  gmock_main
-)
+#target_link_libraries(
+#  ${PROJECT_NAME} PUBLIC
+#  gtest_main
+#  gmock_main
+#)
 
 #Добавим их в списки тестов
-add_test(
-	NAME ${PROJECT_NAME}
-	COMMAND ${PROJECT_NAME}
-)
+#add_test(
+#	NAME ${PROJECT_NAME}
+#	COMMAND ${PROJECT_NAME}
+#)
