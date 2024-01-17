@@ -27,3 +27,5 @@ bld/
 [Ll]ogs/
 # Add this line
 out/
+.cache/
+.vscode/

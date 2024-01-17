@@ -27,3 +27,9 @@ set_target_properties(workk PROPERTIES CMAKE_CONFIGURATION_TYPES DEBUG_CONFIGURA
 
 find_package(Vulkan REQUIRED)
 target_include_directories(workk PUBLIC head ${Vulkan_INCLUDE_DIRS} SYSTEM)
+
+find_package(Boost REQUIRED)
+include_directories(SYSTEM head ${Boost_INCLUDE_DIRS})
+target_link_libraries(workk PUBLIC ${Boost_LIBRARIES})
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
