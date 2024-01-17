@@ -25,4 +25,5 @@ add_executable(workk main.cpp)
 
 set_target_properties(workk PROPERTIES CMAKE_CONFIGURATION_TYPES DEBUG_CONFIGURATIONS)
 
-include_directories(C:\\msys64\\mingw64\\include)
+find_package(Vulkan REQUIRED)
+target_include_directories(workk PUBLIC head ${Vulkan_INCLUDE_DIRS} SYSTEM)

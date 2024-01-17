@@ -1,8 +1,10 @@
 #include <iostream>
-#include <__clang_cuda_builtin_vars.h>
 #include <vulkan/vulkan.h>
 
+
 int main(){
+    VkInstance ins;
+    int a;
     std::cout << "!!!!hello, world" << std::endl;
-    std::
+    std::cin >> a;
 }

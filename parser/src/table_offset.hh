@@ -1,9 +1,7 @@
 #pragma once
 #include <cstdint>
 #include <string>
-#include <iostream>
 #include "types.hh"
-#include <cinttypes>
 #include <unordered_map>
 
 namespace otf{
@@ -13,7 +11,7 @@ namespace otf{
         public:
             file(std::string filepath);     
         private:
-            std::unordered_map<tag_t, offset32_t> table_entry;
+            std::unordered_map<tag_t, offset32_t> table_entries;
         };
 
 
